@@ -1,5 +1,8 @@
 node
 {
+checkout scm
+sh "ls -ltr"
+{
         sh '''
 	         
            if [[ $(/usr/bin/pip freeze | grep awscli)  = ${awscliversion} ]]; then

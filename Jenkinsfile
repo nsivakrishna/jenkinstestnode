@@ -1,7 +1,3 @@
-properties([parameters([string(defaultValue: 'awscli==1.18.147', description: '', name: 'awscliversion', trim: false)])])
-
-string awsversionsr = '$(/usr/bin/pip freeze | grep awscli)'
-
 node
 {
         sh '''

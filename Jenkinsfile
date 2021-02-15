@@ -5,7 +5,8 @@ sh "ls -ltr"
 	script{
 	env.awscliversion = "awscli==1.18.147"
 	}
-	
+
+stage("awscli-test")	
 {
         sh '''
 	    
